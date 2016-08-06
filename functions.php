@@ -5,8 +5,17 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package omar460
+ *echo "# omarcct460" >> README.md
+*git init
+*git add README.md
+*git commit -m "first commit"
+*git remote add origin https://github.com/omarakhund/omarcct460.git
+*git push -u origin master
  */
 
+function omar_signature() {
+	echo " Thanks for reading! OA";
+}
 
 if ( ! function_exists( 'omar460_setup' ) ) :
 /**
