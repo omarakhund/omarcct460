@@ -1,0 +1,57 @@
+/*
+Theme Name: omar460
+Theme URI: http://underscores.me/
+Author: Omar Akhund
+Author URI: http://www.twitter.com/omarzaffar
+Description: CCT460 - Assignment 1
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: omar460
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+omar460 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+body {
+	margin: 10%;
+	background-color: #00FFFF;
+}
+
+#site-navigation.main-navigation{
+	height: 2.5em;
+	line-height: 2.5em;
+	margin: 0.75em 0 3em;
+	text-align: center;
+}
+
+#site-navigation.main-navigation ul{
+	list-style-type: none;
+	margin: auto;
+	width: auto;
+}
+#site-navigation.main-navigation ul li{
+	display: inline-block;
+}
+
+div.site-branding{
+	height: .5em;
+	line-height: .5em;
+	margin: 0.25em 0 3em;
+	text-align: center;
+}
+
+button.menu-toggle{
+	display: none;
+}
+
+a.skip-link.screen-reader-text{
+	display: none;
+}
