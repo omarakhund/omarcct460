@@ -13,9 +13,13 @@
 *git push -u origin master
  */
 
-function omar_signature() {
-	echo " Thanks for reading! OA";
-}
+//Footer menu
+register_nav_menus(
+	array('secondary' => 'Menu Footer'
+		));
+
+//adding options page
+require get_stylesheet_directory() . '/inc/options.php'		
 
 if ( ! function_exists( 'omar460_setup' ) ) :
 /**

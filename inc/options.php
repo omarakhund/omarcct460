@@ -1,0 +1,3 @@
+<?php
+
+//options page

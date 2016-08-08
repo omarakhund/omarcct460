@@ -19,6 +19,19 @@
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'omar460' ), 'omar460', '<a href="http://www.twitter.com/omarzaffar" rel="designer">Omar Akhund</a>' ); ?>
 		</div><!-- .site-info -->
+	
+
+<div id="menu-footer">
+	<?php wp_nav_menu( 
+		array( 'theme_location'=>'secondary', 'menu_class'=>'menu-foot' 
+		)); 
+		?>
+</div>
+
+
+
+
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

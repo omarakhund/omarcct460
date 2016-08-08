@@ -20,9 +20,34 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
+html{
+	margin: 20px;
+	padding: 20px;
+}
+
 body {
 	margin: 10%;
 	background-color: #00FFFF;
+}
+
+
+h1.entry-title{
+	text-align: center;
+	text-decoration: underline;
+}
+
+p.site-title{
+	font-size: 32px;
+	text-decoration: underline;
+}
+
+p.site-description{
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+a.post-edit-link{
+	display: none;
 }
 
 #site-navigation.main-navigation{
@@ -54,4 +79,29 @@ button.menu-toggle{
 
 a.skip-link.screen-reader-text{
 	display: none;
+}
+
+div.entry-meta{
+	text-align: center;
+}
+
+div.entry-content{
+	color: #000;
+	border-top: none;
+	border-bottom: none;
+
+}
+
+#colophon.site-footer ul li{
+	display: inline-block;
+}
+
+#colophon.site-footer ul{
+	list-style-type: none;
+	margin: auto;
+	width: auto;
+}
+
+#colophon.site-footer{
+	text-align: center;
 }
