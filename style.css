@@ -105,3 +105,10 @@ div.entry-content{
 #colophon.site-footer{
 	text-align: center;
 }
+
+#secondary.widget-area{
+	float: right;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	max-width: 20%;
+}

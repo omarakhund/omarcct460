@@ -19,7 +19,16 @@ register_nav_menus(
 		));
 
 //adding options page
-require get_stylesheet_directory() . '/inc/options.php'		
+require get_stylesheet_directory() . '/inc/options.php';
+
+//new menu item for options page
+
+
+//adding a custom signature after every post
+
+function omar_signature(){
+	echo "OA";
+}
 
 if ( ! function_exists( 'omar460_setup' ) ) :
 /**
@@ -103,6 +112,15 @@ function omar460_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'omar460' ),
 		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'omar460' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'secondsidebar', 'omar460' ),
+		'id'            => 'sidebar-2',
 		'description'   => esc_html__( 'Add widgets here.', 'omar460' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
