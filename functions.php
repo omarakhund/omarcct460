@@ -13,6 +13,33 @@
 *git push -u origin master
  */
 
+//custom post type code begins. Code reference: http://www.wpbeginner.com/wp-tutorials/how-to-create-custom-post-types-in-wordpress/
+
+function custom_post(){
+	$labels = array(
+		'name'                => _x( 'Movies', 'Post Type General Name', 'twentythirteen' ),
+        'singular_name'       => _x( 'Movie', 'Post Type Singular Name', 'twentythirteen' ),
+        'menu_name'           => __( 'Movies', 'twentythirteen' ),
+        'parent_item_colon'   => __( 'Parent Movie', 'twentythirteen' ),
+        'all_items'           => __( 'All Movies', 'twentythirteen' ),
+        'view_item'           => __( 'View Movie', 'twentythirteen' ),
+        'add_new_item'        => __( 'Add New Movie', 'twentythirteen' ),
+        'add_new'             => __( 'Add New', 'twentythirteen' ),
+        'edit_item'           => __( 'Edit Movie', 'twentythirteen' ),
+        'update_item'         => __( 'Update Movie', 'twentythirteen' ),
+        'search_items'        => __( 'Search Movie', 'twentythirteen' ),
+        'not_found'           => __( 'Not Found', 'twentythirteen' ),
+        'not_found_in_trash'  => __( 'Not found in Trash', 'twentythirteen' ),
+    );
+}
+
+register_post_type('movies' $args);
+
+add_action('init','custom_post', 0);
+
+
+
+
 //Footer menu
 register_nav_menus(
 	array('secondary' => 'Menu Footer'
