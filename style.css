@@ -20,9 +20,18 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-html{
-	margin: 20px;
-	padding: 20px;
+html {}
+
+.site{
+	background-color:;
+	margin-left: 150px;
+
+}
+
+
+#page {
+	max-width: 70%;
+	float: left;
 }
 
 body {
@@ -91,7 +100,10 @@ div.entry-content{
 	border-bottom: none;
 
 }
-
+#calender_wrap {
+	max-width: 20%;
+	float: right;
+}
 #colophon.site-footer ul li{
 	display: inline-block;
 }
