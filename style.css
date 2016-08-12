@@ -24,8 +24,9 @@ html {}
 
 .site{
 	background-color:;
-	margin-left: 150px;
-
+	margin-left:100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
 }
 
 
@@ -132,3 +133,28 @@ div.entry-content{
 h1.entry-title div.site-info{
 	line-height: 100px;
 }
+
+/* Responsive design code starts */
+
+@media screen and (max-width: 320px){ /*Responsive design for iPhone (portrait)*/
+	#main-navigation{
+		display: block;
+		float: left;
+	}
+
+	.hide-except-mobile, .menu-toggle{
+		display: none;
+	}
+
+	body{
+		background-color: 
+	}
+	#main{
+		padding : 2em; /* 1em = 16px / 2 em = 32px*/
+	}
+	h1,h2,h3,p,a{
+		font-size: 0.75em; /* 1em = 16px / .75em = 12px*/ /*changes font size on mobile devices*/
+		color: #00b3b3; /*changes color of text for only when on mobile devices*/
+
+
+
