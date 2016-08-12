@@ -124,3 +124,11 @@ div.entry-content{
 	border-bottom: 2px solid black;
 	max-width: 20%;
 }
+
+#respond.comment-respond{
+	display: none;
+}
+
+h1.entry-title div.site-info{
+	line-height: 100px;
+}
