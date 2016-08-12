@@ -10,17 +10,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: omar460
 Tags:
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+This is the stylesheet for the omarcct460 theme, as required for Assingment of my CCT460 class.
 
 omar460 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-
-html {}
 
 .site{
 	background-color:;
@@ -65,6 +60,8 @@ a.post-edit-link{
 	line-height: 2.5em;
 	margin: 0.75em 0 3em;
 	text-align: center;
+	text-decoration: underline;
+
 }
 
 #site-navigation.main-navigation ul{
@@ -74,6 +71,11 @@ a.post-edit-link{
 }
 #site-navigation.main-navigation ul li{
 	display: inline-block;
+}
+
+#site-navigation{
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
 }
 
 div.site-branding{
@@ -135,26 +137,66 @@ h1.entry-title div.site-info{
 }
 
 /* Responsive design code starts */
+@media screen and (max-width: 1024px){ /*Responsive design for iPad (landscape)*/
+	.site{
+	margin-left:50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	}
 
-@media screen and (max-width: 320px){ /*Responsive design for iPhone (portrait)*/
 	#main-navigation{
 		display: block;
+		text-align: center;
+		float: left;
+	}
+}
+
+
+@media screen and (max-width: 320px){ /*Responsive design for iPhone (portrait)*/
+	.site{
+	margin-left:50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	}
+
+	#main-navigation{
+		display: block;
+		height: auto;
+	}
+
+	p{
 		float: left;
 	}
 
-	.hide-except-mobile, .menu-toggle{
-		display: none;
+	p.site-description{
+		line-height: 1.5em;
 	}
 
-	body{
-		background-color: 
+	#site-header{
+		float: left;
+		line-height: 1.5em;
 	}
-	#main{
-		padding : 2em; /* 1em = 16px / 2 em = 32px*/
+
+	h1.entry-title{
+		float: left;
 	}
+
+	#primary-menu.menu.nav-menu{
+		float: left;
+	}
+
+	p.site-title{
+		text-align: left;
+		float: left;
+	}
+
+
+	#main.site-main{
+		float: left;
+	}
+	
 	h1,h2,h3,p,a{
 		font-size: 0.75em; /* 1em = 16px / .75em = 12px*/ /*changes font size on mobile devices*/
-		color: #00b3b3; /*changes color of text for only when on mobile devices*/
+		
 
-
-
+}
