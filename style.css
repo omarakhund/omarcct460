@@ -136,6 +136,16 @@ h1.entry-title div.site-info{
 	line-height: 100px;
 }
 
+.blog article{
+	float: left;
+	width: 45%;
+	margin: 10px;
+}
+
+.blog article aside{
+	width: inherit;
+}
+
 /* Responsive design code starts */
 @media screen and (max-width: 1024px){ /*Responsive design for iPad (landscape)*/
 	.site{

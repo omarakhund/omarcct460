@@ -27,6 +27,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php if (has_post_thumbnail() ) { the_post_thumbnail('thumbsize'); } ?>
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */

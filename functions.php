@@ -94,6 +94,12 @@ register_nav_menus(
 	array('secondary' => 'Menu Footer'
 		));
 
+
+//shortcodes for contact page
+
+
+
+
 //adding options page
 require get_stylesheet_directory() . '/inc/options.php';
 
@@ -140,6 +146,7 @@ function omar460_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size('thumbsize', 300, 300, true);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
