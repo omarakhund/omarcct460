@@ -167,6 +167,10 @@ h1.entry-title div.site-info{
 background-color:red;
 clear: both;
 }
+
+.wp-post-image{
+	height: auto;
+}
  
 /* Responsive design code starts */
 @media screen and (max-width: 1024px){ /*Responsive design for iPad (landscape)*/

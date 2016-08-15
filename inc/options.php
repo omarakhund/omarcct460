@@ -30,23 +30,24 @@ function oa_settings_init() {
 
 	add_settings_field( 
 		'oa_checkbox_field', 
-		'Check your preference', 
+		'Check Preference', 
 		'oa_checkbox_field_render', 
 		'theme_options', 
 		'oa_options_page_section'  
 	);
-
+//radio Field
 	add_settings_field( 
 		'oa_radio_field', 
-		'Choose an option', 
+		'Choose a color', 
 		'oa_radio_field_render', 
 		'theme_options', 
 		'oa_options_page_section'  
 	);
 	
+	//Text box
 	add_settings_field( 
 		'oa_textarea_field', 
-		'Enter content in the textarea', 
+		'Enter text here', 
 		'oa_textarea_field_render', 
 		'theme_options', 
 		'oa_options_page_section'  
@@ -54,7 +55,7 @@ function oa_settings_init() {
 	
 	add_settings_field( 
 		'oa_select_field', 
-		'Choose from the dropdown', 
+		'Select Font', 
 		'oa_select_field_render', 
 		'theme_options', 
 		'oa_options_page_section'  
@@ -78,9 +79,9 @@ function oa_settings_init() {
 	function oa_radio_field_render() { 
 		$options = get_option( 'oa_options_settings' );
 		?>
-		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
+		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 1 ); ?> value="1" /> <label> Blue  </label><br />
+		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 2 ); ?> value="2" /> <label> Black </label><br />
+		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 3 ); ?> value="3" /> <label> Yellow </label>
 		<?php
 	}
 	
@@ -97,6 +98,7 @@ function oa_settings_init() {
 		<select name="oa_options_settings[oa_select_field]">
 			<option value="1" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 1 ); ?>>Option 1</option>
 			<option value="2" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>>Option 2</option>
+			<option value="3" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>>Option 2</option>
 		</select>
 	<?php
 	}
