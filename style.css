@@ -17,6 +17,22 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 */
 
+#entry-content{
+	text-align: left;
+}
+
+a{
+	color: #000000;
+}
+a:hover{
+	color: #1E90FF;
+}
+
+a:visited{
+	color: #9400D3;
+}
+
+}
 .site{
 	background-color:;
 	margin-left:100px;
@@ -26,8 +42,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 
 #page {
-	max-width: 70%;
-	float: left;
+	width: 70%;
+	margin: auto;
+	
 }
 
 body {
@@ -146,6 +163,11 @@ h1.entry-title div.site-info{
 	width: inherit;
 }
 
+#menu-footer{
+background-color:red;
+clear: both;
+}
+ 
 /* Responsive design code starts */
 @media screen and (max-width: 1024px){ /*Responsive design for iPad (landscape)*/
 	.site{
