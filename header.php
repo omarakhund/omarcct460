@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for our theme.
+ * The header for my theme.
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
@@ -17,7 +17,20 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<!--Calling the options page in header.php-->
+<?php $options=get_option( 'oa_options_settings' ); ?>    
+
+
 <?php wp_head(); ?>
+
+<!--Option page customization-->
+
+<!-- Custom style from options page -->
+    <style>
+        #masthead {
+	       background-color: <?php echo $options['oa_radio_field']; ?>
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>

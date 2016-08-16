@@ -1,5 +1,5 @@
 /*
-Theme Name: omar460
+Theme Name: omarcct460
 Theme URI: http://underscores.me/
 Author: Omar Akhund
 Author URI: http://www.twitter.com/omarzaffar
@@ -17,30 +17,35 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 */
 
+/*css code starts for omarcct460 theme*/
+
 #entry-content{
 	text-align: left;
 }
 
+/*changes all link colors to black*/
 a{
 	color: #000000;
 }
+/*changes link color to blue when hovered over*/
 a:hover{
 	color: #1E90FF;
 }
-
+/*changes link color to purple when it is already visited*/
 a:visited{
 	color: #9400D3;
 }
 
-}
+/*adds margins and changes background color to grey*/
 .site{
-	background-color:;
+	background-color: #f4f4f4;
 	margin-left:100px;
 	margin-right: 100px;
 	margin-bottom: 100px;
 }
 
 
+/*page width will be 70% of the entire site */
 #page {
 	width: 70%;
 	margin: auto;
@@ -52,26 +57,30 @@ body {
 	background-color: #00FFFF;
 }
 
-
+/*Entry title "Omar Akhund" is centerally aligned and is underligned*/
 h1.entry-title{
 	text-align: center;
 	text-decoration: underline;
 }
 
+/*Changes the size of the site title and its styling*/
 p.site-title{
 	font-size: 32px;
 	text-decoration: underline;
 }
 
+/*changes the site description's font size and its styling*/
 p.site-description{
 	font-size: 28px;
 	text-decoration: underline;
 }
 
+/*Removes editing post option*/
 a.post-edit-link{
 	display: none;
 }
 
+/*styles the navigation menu*/
 #site-navigation.main-navigation{
 	height: 2.5em;
 	line-height: 2.5em;
@@ -88,6 +97,7 @@ a.post-edit-link{
 }
 #site-navigation.main-navigation ul li{
 	display: inline-block;
+	padding: 10px;
 }
 
 #site-navigation{
@@ -114,16 +124,21 @@ div.entry-meta{
 	text-align: center;
 }
 
+/*removes borders from content area*/
 div.entry-content{
 	color: #000;
 	border-top: none;
 	border-bottom: none;
 
 }
+
+/*widget area design*/
 #calender_wrap {
 	max-width: 20%;
 	float: right;
 }
+
+/*footer styles*/
 #colophon.site-footer ul li{
 	display: inline-block;
 }
@@ -138,21 +153,30 @@ div.entry-content{
 	text-align: center;
 }
 
+/*footer styles*/
+#menu-footer{
+background-color: red;
+clear: both;
+}
+
 #secondary.widget-area{
 	float: right;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	max-width: 20%;
 }
-
+/*removes comment area*/
 #respond.comment-respond{
 	display: none;
 }
 
+/*changes line height, allowing more space*/
 h1.entry-title div.site-info{
 	line-height: 100px;
 }
 
+
+/*blog posts are now in two coloumns*/
 .blog article{
 	float: left;
 	width: 45%;
@@ -163,11 +187,9 @@ h1.entry-title div.site-info{
 	width: inherit;
 }
 
-#menu-footer{
-background-color:red;
-clear: both;
-}
 
+
+/*images in blog posts will not overlpa when responsive design kicks in*/
 .wp-post-image{
 	height: auto;
 }

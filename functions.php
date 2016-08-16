@@ -13,9 +13,16 @@
 *git push -u origin master
  */
 
+//Enqueuing stylesheets for options page
+function child_enqueue_scripts() {
+    wp_enqueue_style ('parent-css', get_template_directory_uri() . '/style1.css');
+    wp_enqueue_style ('parent-css', get_template_directory_uri() . '/style2.css');
+    wp_enqueue_style ('parent-css', get_template_directory_uri() . '/style3.css');
+  }
+  add_action('wp_enqueue_scripts', 'child_enqueue_scripts');
+
+
 //custom post type code begins. Code reference: http://www.wpbeginner.com/wp-tutorials/how-to-create-custom-post-types-in-wordpress/
-
-
 function omar_cpt() {
     register_post_type( 'pdf',
     // CPT Option
@@ -95,15 +102,8 @@ register_nav_menus(
 		));
 
 
-//shortcodes for contact page
-
-
-
-
 //adding options page
 require get_stylesheet_directory() . '/inc/options.php';
-
-//new menu item for options page
 
 
 //adding a custom signature after every post
@@ -218,6 +218,7 @@ add_action( 'widgets_init', 'omar460_widgets_init' );
  */
 function omar460_scripts() {
 	wp_enqueue_style( 'omar460-style', get_stylesheet_uri() );
+
 
 	wp_enqueue_script( 'omar460-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

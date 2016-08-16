@@ -1,5 +1,5 @@
 <?php
-	
+
 function oa_add_submenu() {
 		add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 	}
@@ -79,9 +79,9 @@ function oa_settings_init() {
 	function oa_radio_field_render() { 
 		$options = get_option( 'oa_options_settings' );
 		?>
-		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 1 ); ?> value="1" /> <label> Blue  </label><br />
-		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 2 ); ?> value="2" /> <label> Black </label><br />
-		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 3 ); ?> value="3" /> <label> Yellow </label>
+		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 1 ); ?> value="#ff00ff" /> <label> Fuchsia  </label><br />
+		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 2 ); ?> value="#800080" /> <label> Purple </label><br />
+		<input type="radio" name="oa_options_settings[oa_radio_field]" <?php if (isset($options['oa_radio_field'])) checked( $options['oa_radio_field'], 3 ); ?> value="#008080" /> <label> Teal </label>
 		<?php
 	}
 	
@@ -96,9 +96,9 @@ function oa_settings_init() {
 		$options = get_option( 'oa_options_settings' );
 		?>
 		<select name="oa_options_settings[oa_select_field]">
-			<option value="1" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>>Option 2</option>
-			<option value="3" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>>Option 2</option>
+			<option value="#7fffd4" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 1 ); ?>> Aquamarine </option>
+			<option value="#a52a2a" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>> Brown </option>
+			<option value="#dc143c" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>> Crimson</option>
 		</select>
 	<?php
 	}
