@@ -22,7 +22,7 @@ function oa_settings_init() {
 
 	add_settings_field( 
 		'oa_text_field', 
-		'Enter text', 
+		'Enter Announcement', 
 		'oa_text_field_render', 
 		'theme_options', 
 		'oa_options_page_section' 
@@ -61,6 +61,8 @@ function oa_settings_init() {
 		'oa_options_page_section'  
 	);
 
+
+	//Anouncement on top of the page
 	function oa_text_field_render() { 
 		$options = get_option( 'oa_options_settings' );
 		?>
@@ -68,13 +70,6 @@ function oa_settings_init() {
 		<?php
 	}
 	
-	function oa_checkbox_field_render() { 
-		$options = get_option( 'oa_options_settings' );
-	?>
-		<input type="checkbox" name="oa_options_settings[oa_checkbox_field]" <?php if (isset($options['oa_checkbox_field'])) checked( 'on', ($options['oa_checkbox_field']) ) ; ?> value="on" />
-		<label>Turn it On</label> 
-		<?php	
-	}
 	
 	function oa_radio_field_render() { 
 		$options = get_option( 'oa_options_settings' );

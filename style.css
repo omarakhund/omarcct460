@@ -19,6 +19,15 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 /*css code starts for omarcct460 theme*/
 
+.announcement{
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+
+}
+
 #entry-content{
 	text-align: left;
 }

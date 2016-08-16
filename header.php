@@ -26,10 +26,20 @@
 <!--Option page customization-->
 
 <!-- Custom style from options page -->
+
+<!--Adds an announcement on top of the page-->
+<div class="announcement">
+<?php echo $options['oa_text_field']; ?>
+</div>
+
+
+</style>
+<!--Changes the color of the header-->
     <style>
         #masthead {
 	       background-color: <?php echo $options['oa_radio_field']; ?>
         }
+
     </style>
 </head>
 
