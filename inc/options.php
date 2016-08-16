@@ -55,7 +55,7 @@ function oa_settings_init() {
 	
 	add_settings_field( 
 		'oa_select_field', 
-		'Select Font', 
+		'Select Font Size', 
 		'oa_select_field_render', 
 		'theme_options', 
 		'oa_options_page_section'  
@@ -96,9 +96,9 @@ function oa_settings_init() {
 		$options = get_option( 'oa_options_settings' );
 		?>
 		<select name="oa_options_settings[oa_select_field]">
-			<option value="#7fffd4" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 1 ); ?>> Aquamarine </option>
-			<option value="#a52a2a" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>> Brown </option>
-			<option value="#dc143c" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>> Crimson</option>
+			<option value="0.5em" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 1 ); ?>> Small </option>
+			<option value="1em" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>> Medium </option>
+			<option value="1.5em" <?php if (isset($options['oa_select_field'])) selected( $options['oa_select_field'], 2 ); ?>> Large </option>
 		</select>
 	<?php
 	}

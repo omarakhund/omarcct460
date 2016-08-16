@@ -73,6 +73,7 @@ p.site-title{
 p.site-description{
 	font-size: 28px;
 	text-decoration: underline;
+	font-family: 'Oswald', sans-serif;
 }
 
 /*Removes editing post option*/

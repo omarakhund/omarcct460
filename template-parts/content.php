@@ -27,6 +27,16 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		
+		<?php $options=get_option( 'oa_options_settings' ); ?>
+
+	<style>
+        div.entry-content {
+	       font-size: <?php echo $options['oa_select_field']; ?>
+        }
+    </style>
+</head>
+
 		<?php if (has_post_thumbnail() ) { the_post_thumbnail('thumbsize');} ?>
 		<?php
 			the_content( sprintf(
