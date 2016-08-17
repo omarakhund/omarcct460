@@ -70,12 +70,20 @@ a:visited{
 #page {
 	width: 70%;
 	margin: auto;
+	opacity: 0.8;	
+	background-color: #9db3bf;
 	
 }
 
 body {
 	margin: 10%;
-	background-color: #00FFFF;
+	background-color: #f4f4f4;
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+
+
 }
 
 /*Entry title "Omar Akhund" is centerally aligned and is underligned*/
@@ -155,6 +163,7 @@ div.entry-content{
 	border-top: none;
 	border-bottom: none;
 	font-size: 16px;
+	margin: 1em;
 
 }
 
