@@ -17,7 +17,7 @@ function oa_settings_init() {
 	);
 	
 	function oa_options_page_section_callback() { 
-		echo 'This option allows users to display information in their footer.';
+		echo 'Various Options for Omarcct460 Theme.';
 	}
 
 	add_settings_field( 
@@ -28,30 +28,17 @@ function oa_settings_init() {
 		'oa_options_page_section' 
 	);
 
-	add_settings_field( 
-		'oa_checkbox_field', 
-		'Check Preference', 
-		'oa_checkbox_field_render', 
-		'theme_options', 
-		'oa_options_page_section'  
-	);
+	
 //radio Field
 	add_settings_field( 
 		'oa_radio_field', 
-		'Choose a color', 
+		'Choose a color for the background of the header', 
 		'oa_radio_field_render', 
 		'theme_options', 
 		'oa_options_page_section'  
 	);
 	
-	//Text box
-	add_settings_field( 
-		'oa_textarea_field', 
-		'Enter text here', 
-		'oa_textarea_field_render', 
-		'theme_options', 
-		'oa_options_page_section'  
-	);
+	
 	
 	add_settings_field( 
 		'oa_select_field', 
@@ -80,12 +67,6 @@ function oa_settings_init() {
 		<?php
 	}
 	
-	function oa_textarea_field_render() { 
-		$options = get_option( 'oa_options_settings' );
-		?>
-		<textarea cols="40" rows="5" name="oa_options_settings[oa_textarea_field]"><?php if (isset($options['oa_textarea_field'])) echo $options['oa_textarea_field']; ?></textarea>
-		<?php
-	}
 
 	function oa_select_field_render() { 
 		$options = get_option( 'oa_options_settings' );
