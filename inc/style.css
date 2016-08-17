@@ -269,8 +269,9 @@ select,
 textarea {
 	color: #404040;
 	font-family: sans-serif;
-	font-size: 1.25em;
-	line-height: 1.5em;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
 }
 
 h1,
@@ -903,9 +904,8 @@ h2.entry-title{
 }
 
 p{
-	font-size: 16px;
+	font-size: 1em;
 	text-align: left;
-	line-height:
 
 }
 
@@ -972,14 +972,14 @@ h1.entry-title{
 
 /*Changes the size of the site title and its styling*/
 p.site-title{
-	font-size: 32px;
+	font-size: 2em;
 	text-decoration: underline;
 	text-align: center;
 }
 
 /*changes the site description's font size and its styling*/
 p.site-description{
-	font-size: 28px;
+	font-size: 1.75em;
 	text-decoration: underline;
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
@@ -1041,7 +1041,7 @@ div.entry-content{
 	color: #000;
 	border-top: none;
 	border-bottom: none;
-	font-size: 16px;
+	font-size: 1px;
 	margin: 1em;
 
 }
@@ -1192,7 +1192,7 @@ h1.entry-title div.site-info{
 	}
 	
 	h1,h2,h3,p,a{
-		font-size: 12px; /* 1em = 16px / .75em = 12px*/ /*changes font size on mobile devices*/
+		font-size: 0.75em; /* 1em = 16px / .75em = 12px*/ /*changes font size on mobile devices*/
 		
 
 }

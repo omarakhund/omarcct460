@@ -27,21 +27,6 @@
 		)); 
 		?>
 </div>
-<?php 
-$options = get_option( 'oa_options_settings' );
-	echo $options['oa_text_field'] .'<br />';
-	if (isset($options['oa_checkbox_field']) =='on'){
-		echo $options['oa_checkbox_field'] .'<br />';
-	} else {
-		echo'off <br />';
-	}
-	echo $options ['oa_radio_field'] .'<br />';
-	echo $options['oa_textarea_field'] .'<br />';
-	echo $options['oa_select_field'];
-?>	
-
-
-
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
